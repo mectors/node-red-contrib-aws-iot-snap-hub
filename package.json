@@ -13,7 +13,7 @@
     "keywords": [ "node-red", "aws-iot" ],
     "node-red"      : {
         "nodes"     : {
-            "awsiot-mqtt": "awsiot-mqtt.js"
+            "awsiot-mqtt": "awsiot-mqtt.js",
             "awsiot-tls": "awsiot-tls.js"
         }
     },

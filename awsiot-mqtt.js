@@ -30,11 +30,11 @@ module.exports = function(RED) {
 
     function MQTTBrokerNode(n) {
         RED.nodes.createNode(this,n);
-
+        var awsiot = require(certsdir+"/awsiot.json");
         // Configuration options passed by Node Red
-        this.broker = n.broker;
+        this.broker = aws.host;
         this.port = n.port;
-        this.clientid = n.clientid;
+        this.clientid = aws.clientID;
         this.usetls = n.usetls;
         this.verifyservercert = n.verifyservercert;
         this.compatmode = n.compatmode;
